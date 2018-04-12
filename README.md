@@ -36,7 +36,7 @@ $ pip install [missing package name]
 
 ### Installing
 
-No instal OR setup required.
+No install OR setup required.
 
 1. Download the files 
 2. Create a urls.txt file with product category pages to be scraped like this one
@@ -72,7 +72,7 @@ $ proxychains python start_scraper.py
 
 Here's a short test for Beagle Scraper
 
-1. Download Beagler Scraper
+1. Download Beagle Scraper
 2. Create a urls.txt file and insert the following product categody pages (each link on a different line)
 
 https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
