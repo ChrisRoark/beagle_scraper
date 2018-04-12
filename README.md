@@ -1,10 +1,10 @@
 # Beagle Scraper
 
-Building the largest open-source Ecommerce and listing pages scraper in Python and BeautifulSoup4
+Building the largest open-source Ecommerce scraper in Python and BeautifulSoup4
 
 ## Usage
 
-No install or setup required.
+No install or setup required
 
 1. Download the files into a folder
 2. Create a urls.txt file with product category pages to be scraped like this one
@@ -16,7 +16,7 @@ $ python start_scraper.py
 
 ### Output
 
-Beagler Scraper will export all data into json format into a sub-folder.
+Beagler Scraper will export all data into json format into a sub-folder
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ $ pip install beautifulsoup4
 
 ### Prerequisites - extra Python packages required
 
-The following packages are not included in the default Python 2.7 install and require installation.
+The following packages are not included in the default Python 2.7 install and require installation
 
 * tldextract
 ```
@@ -47,7 +47,7 @@ $ pip install [missing package name]
 
 ## Using proxies to scrape
 
-Beagle Scraper doesn't support proxies at the moment, but proxychains can be used to send request through different proxies.
+Beagle Scraper doesn't support proxies at the moment, but proxychains can be used to send request through different proxies
 
 ### Install proxychains
 
@@ -75,8 +75,8 @@ $ python start_scraper.py
 ```
 Example output for the above scraped urls:
 
-amazon_dd_mm_yy.json
-bestbuy_dd_mm_yy.json
+* amazon_dd_mm_yy.json
+* bestbuy_dd_mm_yy.json
 
 
 ## Built With
@@ -86,9 +86,9 @@ bestbuy_dd_mm_yy.json
 
 ## How to contribute
 
-Everybody is welcomed in contributing. 
-
 All you have to do is to create a function scraper link **amazon_scraper()** from [beagle_scraper.py](https://github.com/ChrisRoark/beagle_scraper/blob/master/beagle_scraper.py) and submit it here.
+
+Here are more info on how the scraper function is created
 
 Things to consider:
 1. HTML wrapper and class/id for each product listed on the page
