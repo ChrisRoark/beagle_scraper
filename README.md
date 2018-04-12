@@ -33,11 +33,11 @@ The following packages are not included in the default Python 2.7 install and re
 
 * tldextract
 ```
-sudo pip install tldextract
+$ sudo pip install tldextract
 ```
 * selenium
 ```
-pip install selenium
+$ pip install selenium
 ```
 If another package is missing run the command
 
