@@ -2,6 +2,22 @@
 
 Building the largest open-source Ecommerce and listing pages scraper in Python and BeautifulSoup4
 
+## Usage
+
+No install or setup required.
+
+1. Download the files into a folder
+2. Create a urls.txt file with product category pages to be scraped like this one
+* https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
+3. Run the command
+```
+$ python start_scraper.py
+```
+
+### Output
+
+Beagler Scraper will export all data into json format into a sub-folder.
+
 ## Getting Started
 
 Beagle Scraper requires a machine with Python 2.7 and BeautifulSoup4
@@ -29,23 +45,6 @@ If another package is missing run the command
 $ pip install [missing package name]
 ```
 
-### Usage
-
-No install or setup required.
-
-1. Download the files into a folder
-2. Create a urls.txt file with product category pages to be scraped like this one
-* https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
-3. Run the command
-```
-$ python start_scraper.py
-```
-
-### Output
-
-Beagler Scraper will export all data into json format in the folder where the Python files are saved. 
-
-
 ## Using proxies to scrape
 
 Beagle Scraper doesn't support proxies at the moment, but proxychains can be used to send request through different proxies.
@@ -59,14 +58,12 @@ After installing proxychains, run this command to make the scraper use proxies
 $ proxychains python start_scraper.py
 ```
 
-
-
 ## Test Beagle Scraper
 
 Here's a short test for Beagle Scraper
 
 1. Download Beagle Scraper
-2. Create a urls.txt file and insert the following product categody pages (each link on a different line)
+2. Create a **urls.txt** file and insert the following product categody pages (each link on a different line)
 
 * https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
 * https://www.bestbuy.com/site/tvs/75-inch-tvs/pcmcat1514910595284.c?id=pcmcat1514910595284
