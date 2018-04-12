@@ -1,10 +1,10 @@
 # Beagle Scraper
 
-Ecommerce and product categories scraper developed in Python and BeautifoulSoup4
+Building the largest open-source Ecommerce and listing pages scraper in Python and BeautifoulSoup4
 
 ## Getting Started
 
-Beagle Scraper requires a machine with Python 2.7 and BeautifoulSoup4
+Beagle Scraper requires a machine with Python 2.7 and BeautifulSoup4
 
 Install BeautifoulSoup4
 ```
