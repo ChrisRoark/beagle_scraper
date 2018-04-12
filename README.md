@@ -8,7 +8,7 @@ Beagle Scraper requires a machine with Python 2.7 and BeautifoulSoup4
 
 Install BeautifoulSoup4
 ```
-pip install beautifulsoup4
+$ pip install beautifulsoup4
 ```
 
 ### Prerequisites
@@ -31,7 +31,7 @@ cookielib
 If a package is missing run the command
 
 ```
-pip install [missing package name]
+$ pip install [missing package name]
 ```
 
 ### Installing
@@ -45,7 +45,7 @@ https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%
 
 3. Run the command
 ```
-python start_scraper.py
+$ python start_scraper.py
 ```
 
 ### Output
@@ -63,7 +63,7 @@ Beagle Scraper doesn't support proxies at the moment, but proxychains can be use
 
 After installing proxychains, run this command to make the scraper use proxies
 ```
-proxychains python start_scraper.py
+$ proxychains python start_scraper.py
 ```
 
 
@@ -82,7 +82,7 @@ https://www.bestbuy.com/site/tvs/75-inch-tvs/pcmcat1514910595284.c?id=pcmcat1514
 3. Run Beagle Scraper
 
 ```
-python start_scraper.py
+$ python start_scraper.py
 ```
 Example output for the above scraped urls:
 
