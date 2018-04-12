@@ -53,7 +53,7 @@ $ python start_scraper.py
 Beagler Scraper will export all data into json format in the folder where the Python files are saved. 
 
 
-# Using proxies to scrape
+## Using proxies to scrape
 
 Beagle Scraper doesn't support proxies at the moment, but proxychains can be used to send request through different proxies.
 
@@ -75,9 +75,8 @@ Here's a short test for Beagle Scraper
 1. Download Beagle Scraper
 2. Create a urls.txt file and insert the following product categody pages (each link on a different line)
 
-https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
-
-https://www.bestbuy.com/site/tvs/75-inch-tvs/pcmcat1514910595284.c?id=pcmcat1514910595284
+* https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
+* https://www.bestbuy.com/site/tvs/75-inch-tvs/pcmcat1514910595284.c?id=pcmcat1514910595284
 
 3. Run Beagle Scraper
 
@@ -99,7 +98,12 @@ bestbuy_dd_mm_yy.json
 
 Everybody is welcomed in contributing. 
 
-All you have to do is to create a function scraper link *amazon_scraper()* from [beagle_scraper.py](https://github.com/ChrisRoark/beagle_scraper/blob/master/beagle_scraper.py) and submit it here.
+All you have to do is to create a function scraper link **amazon_scraper()** from [beagle_scraper.py](https://github.com/ChrisRoark/beagle_scraper/blob/master/beagle_scraper.py) and submit it here.
+
+Things to consider:
+1. HTML wrapper and class/id for each product listed on the page
+2. The product details HTML tags and classes
+3. Pagination setup
 
 ## Authors
 
