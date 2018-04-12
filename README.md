@@ -98,3 +98,7 @@ Things to consider:
 ## Authors
 
 * **Chris Roark** - *Initial work* - [ChrisRoark](https://github.com/ChrisRoark)
+
+## License
+
+GPL-3.0 license
