@@ -1,6 +1,6 @@
 # Beagle Scraper
 
-Building the largest open-source Ecommerce and listing pages scraper in Python and BeautifoulSoup4
+Building the largest open-source Ecommerce and listing pages scraper in Python and BeautifulSoup4
 
 ## Getting Started
 
