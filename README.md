@@ -6,8 +6,8 @@ Building the largest open-source Ecommerce scraper with Python and BeautifulSoup
 
 No install or setup required
 
-1. Download the files into a folder
-2. Create a urls.txt file with product category pages to be scraped like this one
+1. Download the source code into a folder
+2. Create a **urls.txt** file with product category pages to be scraped like this one
 * https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
 3. Run the command
 ```
