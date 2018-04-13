@@ -4,7 +4,7 @@ Building the largest open-source Ecommerce scraper with Python and BeautifulSoup
 
 ## Usage
 
-No install or setup required
+No installation or setup required
 
 1. Download the source code into a folder
 2. Create a **urls.txt** file with product category pages to be scraped like this one
