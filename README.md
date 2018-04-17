@@ -16,7 +16,12 @@ $ python start_scraper.py
 
 ### Output
 
-Beagler Scraper will export all data into json format into a sub-folder
+Beagler Scraper will export all data into JSON format into a sub-folder
+
+## Current supported e-commerce stores
+
+* Amazon.com
+* BestBuy.com
 
 ## Getting Started
 
@@ -47,7 +52,7 @@ $ pip install [missing package name]
 
 ## Using proxies to scrape
 
-Beagle Scraper support external proxies at the moment, but [proxychains](https://github.com/haad/proxychains) can be used to send request through different proxies
+Beagle Scraper support external proxies at the moment, but [proxychains](https://github.com/haad/proxychains) can be used to send requests through different proxies
 
 ### Install proxychains
 
@@ -63,7 +68,7 @@ $ proxychains python start_scraper.py
 Here's a short test for Beagle Scraper
 
 1. Download Beagle Scraper
-2. Create a **urls.txt** file and insert the following product categody pages (each link on a different line)
+2. Create a **urls.txt** file and insert the following product category pages (each link on a different line)
 
 * https://www.amazon.com/TVs-HDTVs-Audio-Video/b/ref=tv_nav_tvs?ie=UTF8&node=172659&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-leftnav&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_t=101&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_i=1266092011
 * https://www.bestbuy.com/site/tvs/75-inch-tvs/pcmcat1514910595284.c?id=pcmcat1514910595284
@@ -88,7 +93,7 @@ Example output for the above scraped urls:
 
 All you have to do is to create a function scraper link **amazon_scraper()** from [beagle_scraper.py](https://github.com/ChrisRoark/beagle_scraper/blob/master/beagle_scraper.py) and submit it here.
 
-Here are more info on how the scraper function is created
+Here is more info on how the scraper function is created
 
 Things to consider:
 1. HTML wrapper and class/id for each product listed on the page
