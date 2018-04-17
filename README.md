@@ -8,7 +8,7 @@ No installation or setup required
 
 1. Download the source code into a folder
 2. Create a **urls.txt** file with product category pages to be scraped like this one
-* https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
+* https://www.amazon.com/TVs-HDTVs-Audio-Video/b/ref=tv_nav_tvs?ie=UTF8&node=172659&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-leftnav&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_t=101&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_i=1266092011
 3. Run the command
 ```
 $ python start_scraper.py
@@ -65,7 +65,7 @@ Here's a short test for Beagle Scraper
 1. Download Beagle Scraper
 2. Create a **urls.txt** file and insert the following product categody pages (each link on a different line)
 
-* https://www.amazon.com/s/ref=lp_283155_nr_n_0?fst=as%3Aoff&rh=n%3A283155%2Cn%3A%211000%2Cn%3A1&bbn=1000&ie=UTF8&qid=1523546751&rnid=1000
+* https://www.amazon.com/TVs-HDTVs-Audio-Video/b/ref=tv_nav_tvs?ie=UTF8&node=172659&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-leftnav&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_t=101&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_i=1266092011
 * https://www.bestbuy.com/site/tvs/75-inch-tvs/pcmcat1514910595284.c?id=pcmcat1514910595284
 
 3. Run Beagle Scraper
