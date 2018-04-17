@@ -7,8 +7,7 @@ Building the largest open-source Ecommerce scraper with Python and BeautifulSoup
 No installation or setup required
 
 1. Download the source code into a folder
-2. Create a **urls.txt** file with product category pages to be scraped like this one
-* https://www.amazon.com/TVs-HDTVs-Audio-Video/b/ref=tv_nav_tvs?ie=UTF8&node=172659&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-leftnav&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_t=101&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_i=1266092011
+2. Create a **urls.txt** file with product category pages to be scraped like this [Amazon page](https://www.amazon.com/TVs-HDTVs-Audio-Video/b/ref=tv_nav_tvs?ie=UTF8&node=172659&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-leftnav&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_r=WQG6T4RDNW1YMS15T8Q8&pf_rd_t=101&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_p=2905dcbf-1f2a-4de6-9aa1-c71f689a0780&pf_rd_i=1266092011)
 3. Run the command
 ```
 $ python start_scraper.py
