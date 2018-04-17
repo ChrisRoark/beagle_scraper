@@ -58,10 +58,6 @@ $ pip install [missing package name]
 
 Beagle Scraper support external proxies at the moment, but [proxychains](https://github.com/haad/proxychains) can be used to send requests through different proxies
 
-### Install proxychains
-
-* [How to install proxychains](https://www.bestproxyproviders.com/blog/how-to-set-proxychains-with-public-or-private-proxies/)
-
 After installing proxychains, run this command to make the scraper use proxies
 ```
 $ proxychains python start_scraper.py
