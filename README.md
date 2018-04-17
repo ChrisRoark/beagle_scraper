@@ -14,11 +14,6 @@ No installation or setup required
 $ python start_scraper.py
 ```
 
-### Complete tutorial on how to run Beagle Scraper 
-
-* https://www.bestproxyproviders.com/blog/beagle-scraper-tutorial-how-to-scrape-e-commerce-websites-and-modify-the-scraper/
-
-
 ### Output
 
 Beagler Scraper will export all data into JSON format into a sub-folder
@@ -27,6 +22,10 @@ Beagler Scraper will export all data into JSON format into a sub-folder
 
 * Amazon.com
 * BestBuy.com
+
+### Complete tutorial on how to run Beagle Scraper 
+
+* https://www.bestproxyproviders.com/blog/beagle-scraper-tutorial-how-to-scrape-e-commerce-websites-and-modify-the-scraper/
 
 ## Getting Started
 
