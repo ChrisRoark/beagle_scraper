@@ -21,6 +21,7 @@ Beagler Scraper will export all data into JSON format into a sub-folder
 
 * Amazon.com
 * BestBuy.com
+* HomeDepot.com
 
 ### Complete tutorial on how to run Beagle Scraper 
 
