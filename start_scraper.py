@@ -59,6 +59,14 @@ for category_url in links:
 		except:
 			pass
 
+	if domain_ext == 'homedepot.com':
+		try:
+			scrape.homedepot_scraper(category_url)
+			pass
+		except:
+			pass
+
+
 	else:
 		print 'No scraper for domain: ' + str(domain_name.domain)
 		print ''
