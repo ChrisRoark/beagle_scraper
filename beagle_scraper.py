@@ -29,9 +29,11 @@ Start scraper options:
 
 """
 
+scrape_page_log = []
 amazon_products_list = []
 bestbuy_products_list = []
-scrape_page_log = []
+homedepot_products_list = []
+
 
 def amazon_scraper(category_url):
 
@@ -225,6 +227,89 @@ def bestbuy_scraper(category_url):
 		output_file(file_name, bestbuy_products_list)
 		driver.quit()
 		print 'Category Scraped Completed '+'Items: '+str(len(bestbuy_products_list))+' At: '+str(now.hour)+':'+str(now.minute)+':'+str(now.second)
+		time.sleep(6)
+		return
+	return
+
+
+def homedepot_scraper(category_url):
+	
+	page_link = str(category_url)
+
+	now=datetime.now()
+	print ''
+	#To avoid pages with pagination issues, check if the page wasn't scraped already
+	if page_link not in scrape_page_log:
+		#appends url to pages that are scraped
+		scrape_page_log.append(page_link)	
+		print 'Start scraping '+'Items: '+str(len(homedepot_products_list))+' At: '+str(now.hour)+':'+str(now.minute)+':'+str(now.second)+' Page: '+str(page_link)
+
+		shop_page_req_head = urllib2.Request(page_link)
+		shop_page_req_head.add_header('User-Agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0')
+		#load page and create soup	
+		shop_page = urllib2.urlopen(shop_page_req_head)
+		shop_soup = BeautifulSoup(shop_page, 'html.parser')
+		
+		#get the domain of the url for exporting file name
+		domain_url = tldextract.extract(page_link)
+		#join to add also domain suffix link domain.com
+		domain_name = '.'.join(domain_url[1:])
+		file_name = domain_url.domain
+
+		#DATA EXTRACTION
+		#store all product divs from the page in a list
+		items_div = shop_soup.find_all('div', {'class': 'pod-inner'})
+		
+		#loop the scraped products list and extract the required data 
+
+		for div in items_div:	
+			try:
+				#append data in list of items
+				homedepot_products_list.append({
+					'title' : div.find('div', {'class': 'pod-plp__description js-podclick-analytics'}).text.strip(), 
+					'url' : 'https://www.homedepot.com'+str(div.find('a', {'class': 'js-podclick-analytics'})['href']), 
+					'price' : div.find('div', {'class': 'price'}).text.strip()[1:-2], 
+					'domain' : domain_name})
+
+				print div.find('div', {'class': 'pod-plp__description js-podclick-analytics'}).text.strip()
+			except:
+				pass			
+					
+			#random time delay 1 to several seconds (change 6 with the max seconds for delay)
+			time_out(6)
+		#END DATA EXTRACTION
+		now=datetime.now()
+		print 'Page completed '+'Items: '+str(len(homedepot_products_list))+' At: '+str(now.hour)+':'+str(now.minute)+':'+str(now.second)
+
+		#PAGINATION 
+		#check if current page is last for last page by reading the page button link	
+		if shop_soup.find('li', {'class': 'hd-pagination__item hd-pagination__button'}):
+
+			#loads next page button link
+			next_page_click = shop_soup.find_all('a', {'class': 'hd-pagination__link'})
+			while next_page_click[-1]['title'] == 'Next':
+				next_page_button_href = 'https://www.homedepot.com'+str(next_page_click[-1]['href'])
+				try:
+					#write scraped data to json file
+					output_file(file_name, homedepot_products_list)
+					#change 5 to max seconds to pause before changing to next page
+					pagination_timeout(5)
+					homedepot_scraper(next_page_button_href)
+					break
+				except:
+					break
+			else:
+				#write scraped data to json file
+				output_file(file_name, homedepot_products_list)
+				print 'Category Scraped Completed '+'Items: '+str(len(homedepot_products_list))+' At: '+str(now.hour)+':'+str(now.minute)+':'+str(now.second)
+			#END PAGINATION	
+	else:
+		#appends any page with issues to log_error_[job_date].csv
+		error_log(page_link, 'Pagination issues')
+		print ''
+		print 'ERROR! Page '+str(page_link)+' already scraped. See error log'
+		output_file(file_name, homedepot_products_list)
+		print 'Category Scraped Completed '+'Items: '+str(len(homedepot_products_list))+' At: '+str(now.hour)+':'+str(now.minute)+':'+str(now.second)
 		time.sleep(6)
 		return
 	return
