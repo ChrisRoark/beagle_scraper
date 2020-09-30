@@ -1,7 +1,7 @@
 # Beagle Scraper
 
 Building the largest open-source Ecommerce scraper with Python and BeautifulSoup4
-
+An amazing and good project
 ## Usage
 
 No installation or setup required
