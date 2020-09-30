@@ -1,4 +1,4 @@
-# Beagle Scraper
+# Beagle Scraper (AN AWESOME SCRAPER)
 
 Building the largest open-source Ecommerce scraper with Python and BeautifulSoup4.
 
